@@ -1,0 +1,126 @@
+/* Ensure the component takes up the full viewport height */
+.image_section {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	/* overflow: hidden; */
+	background-size: cover;
+	background-position: center;
+}
+
+/* Style the container for text and buttons */
+.image_content {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100vh;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	text-align: center;
+	color: #fff; /* Text color */
+	z-index: 1; /* Place it above the video */
+}
+
+.top_third {
+	margin-bottom: 10rem;
+}
+.bottom_third {
+	margin-top: 7em;
+}
+
+/* Style the title */
+.image_content h1 {
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+
+/* Style the subtitle */
+.image_content h4 {
+	font-size: 1.5rem;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+/* Style the paragraph text */
+.image_content p {
+	font-size: 1rem;
+	margin: 0 auto;
+	text-shadow: 2px 2px 4px rgba(16, 16, 16, 0.371);
+}
+
+/* Style the button container */
+.button_container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+/* Style the buttons */
+.button_container button {
+	padding: 10px 20px;
+	margin: 0 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.order_now,
+.demo_drive {
+	width: 250px;
+	font-size: 1rem;
+	font-weight: 600;
+}
+.order_now {
+	background-color: rgba(255, 255, 255, 0.668);
+	color: rgb(69, 69, 69);
+}
+.demo_drive {
+	background-color: rgba(30, 30, 30, 0.678);
+	color: #fff;
+}
+/* Style the paragraph container */
+.paragraph_container {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Style the paragraphs under the buttons */
+.paragraph_container p {
+	font-size: 0.8rem;
+	text-align: center;
+	margin-top: 5px;
+}
+.underline {
+	text-decoration: underline;
+}
+
+/* Media query for responsiveness if needed */
+@media (max-width: 45em) {
+	.order_now,
+	.demo_drive {
+		width: 125px;
+		font-size: 1rem;
+	}
+	.image_section {
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+@media (max-width: 35em) {
+	.order_now,
+	.demo_drive {
+		width: 90%;
+		font-size: 1.2rem;
+		align-self: center;
+	}
+	.button_container {
+		flex-direction: column;
+
+		gap: 1em;
+		width: 100vw;
+	}
+}

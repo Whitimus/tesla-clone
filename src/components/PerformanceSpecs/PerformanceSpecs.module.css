@@ -1,0 +1,24 @@
+.performance_specs {
+	background-color: #e2e3e3;
+}
+.top_section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 6em;
+}
+.top_section h2 {
+	font-size: 2.5rem;
+	margin-bottom: 0;
+}
+.top_section h2,
+.top_section p {
+	margin-left: 6rem;
+	margin-top: 1em;
+	max-width: 60%;
+}
+.top_section img {
+	max-width: 90vw;
+	padding-top: 2em;
+	margin: 1em auto;
+}
