@@ -7,6 +7,7 @@ import Image2 from '../assets/tesla-s.jpg';
 import Image3 from '../assets/MS-Performance.jpg';
 import ImageFade from '../components/ImageFade/ImageFade';
 import PerformanceSpecs from '../components/PerformanceSpecs/PerformanceSpecs';
+import Footer from '../components/Footer/Footer';
 
 export default function ModelS() {
 	const carouselData = [
@@ -65,7 +66,7 @@ export default function ModelS() {
 					buttonText2="Demo Drive"
 				/>
 			</section>
-			<section className="section">
+			<section className="section normal_scroll">
 				<ImageFade backgroundImage={Image2} title="Interior of the Future" />
 			</section>
 			<section className="section">
@@ -78,6 +79,9 @@ export default function ModelS() {
 					imageSrc={Image3}
 					carouselData={carouselData}
 				/>
+			</section>
+			<section className="section">
+				<Footer />
 			</section>
 		</div>
 	);

@@ -3,6 +3,7 @@
 }
 .top_section {
 	display: flex;
+
 	flex-direction: column;
 	justify-content: center;
 	padding-top: 6em;
@@ -13,7 +14,7 @@
 }
 .top_section h2,
 .top_section p {
-	margin-left: 6rem;
+	margin-left: clamp(2rem, 5vw + 1rem, 6rem);
 	margin-top: 1em;
 	max-width: 60%;
 }

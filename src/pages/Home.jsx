@@ -4,6 +4,7 @@ import Image1 from '../assets/2022-Tesla-Model-3-5.webp';
 import Image2 from '../assets/modelS.webp';
 import Image3 from '../assets/tesla-solar-shingle-powerwall-car.jpg';
 import Video from '../assets/Model3-background.mp4';
+import Footer from '../components/Footer/Footer';
 export default function Home() {
 	return (
 		<div className="container">
@@ -59,6 +60,9 @@ export default function Home() {
 					buttonText1="Order Now"
 					buttonText2="Learn More"
 				/>
+			</section>
+			<section className="section">
+				<Footer />
 			</section>
 		</div>
 	);

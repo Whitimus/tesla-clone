@@ -23,7 +23,7 @@
 }
 
 .panel.faded {
-	opacity: 0.5; /* Adjust the opacity as needed */
+	opacity: 0.3; /* Adjust the opacity as needed */
 }
 
 .toggle_button {
@@ -54,8 +54,15 @@
 }
 
 /* Media query for responsiveness if needed */
-@media (max-width: 768px) {
-	.panel {
-		width: 90%;
+@media (max-width: 35em) {
+	.panelContainer {
+		width: 90vw;
+		gap: 1em;
+	}
+	.stats_item h2 {
+		font-size: 1rem;
+	}
+	.stats {
+		gap: 1em;
 	}
 }

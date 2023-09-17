@@ -1,0 +1,28 @@
+.footer {
+	color: #333;
+	background-color: rgb(255, 255, 255);
+	padding: 1.5rem;
+}
+
+.footerList {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footerList li {
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+@media (max-width: 45em) {
+	.footerList {
+		flex-wrap: wrap;
+	}
+	.footerList li {
+		font-size: 0.5em;
+	}
+}

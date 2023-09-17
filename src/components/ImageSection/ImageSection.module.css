@@ -6,6 +6,7 @@
 	/* overflow: hidden; */
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
 }
 
 /* Style the container for text and buttons */
@@ -24,10 +25,14 @@
 }
 
 .top_third {
-	margin-bottom: 10rem;
+	/* margin-bottom: 5rem; */
 }
 .bottom_third {
+	display: grid;
 	margin-top: 7em;
+}
+.image_content img {
+	width: 600px;
 }
 
 /* Style the title */
@@ -54,7 +59,7 @@
 .button_container {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 }
 
 /* Style the buttons */
@@ -105,22 +110,26 @@
 		width: 125px;
 		font-size: 1rem;
 	}
-	.image_section {
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
 }
 @media (max-width: 35em) {
 	.order_now,
 	.demo_drive {
-		width: 90%;
 		font-size: 1.2rem;
-		align-self: center;
+		width: 90%;
 	}
+	.image_content img {
+		width: 400px;
+	}
+
 	.button_container {
 		flex-direction: column;
+		justify-self: center;
+		align-items: center;
+		width: 100vw;
 
 		gap: 1em;
-		width: 100vw;
+	}
+	.button_container button {
+		padding: 1em 1em;
 	}
 }

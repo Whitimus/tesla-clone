@@ -22,7 +22,7 @@ function ImageFade({ backgroundImage, videoSource, title, whiteTitle }) {
 				muted
 				loop
 			></video>
-			<h2 className={styles.dark_text}>{title}</h2>
+			<h2 className={styles.light_text}>{title}</h2>
 			<h2 className={styles.light_text}>{whiteTitle}</h2>
 		</div>
 	);

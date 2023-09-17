@@ -4,9 +4,11 @@ import styles from './ImageSection.module.css';
 
 function ImageSection({
 	backgroundImage,
+	logo,
 	title,
 	subtitle,
 	description,
+	altDescription,
 	buttonText1,
 	buttonText2,
 	additionalText,
@@ -19,6 +21,8 @@ function ImageSection({
 		>
 			<div className={styles.image_content}>
 				<div className={styles.top_third}>
+					<img className={styles.logo} src={logo} alt="" />
+					<p>{altDescription}</p>
 					<h1>{title}</h1>
 					<h4>{subtitle}</h4>
 					<p>{description}</p>
