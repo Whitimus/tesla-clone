@@ -1,4 +1,3 @@
-import Header from '../components/Header/Header';
 import Logo from '../assets/Tesla_Cybertruck-Logo.wine.png';
 
 import Image1 from '../assets/cyber.webp';

@@ -2,7 +2,7 @@ import HeroVideo from '../components/HeroVideo/HeroVideo';
 import ImageSection from '../components/ImageSection/ImageSection';
 import Image1 from '../assets/Model-x.jpg';
 import Video from '../assets/ModelX.mp4';
-import Video2 from '../assets/3d-model.mp4';
+
 import Image2 from '../assets/2021-Tesla-Model-S-interior.webp';
 import Image3 from '../assets/MS-Performance.jpg';
 import Image4 from '../assets/Model-X-Interior.jpg';

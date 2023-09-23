@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Carousel.module.css';
 
 function Carousel({ data }) {
-	const [currentIndex, setCurrentIndex] = useState(0);
+	const [currentIndex] = useState(0);
 	const [isPanel1Visible, setIsPanel1Visible] = useState(true);
 
 	useEffect(() => {
